@@ -379,6 +379,7 @@ export interface ApiTopicTopic extends Schema.CollectionType {
     documents: Attribute.Media;
     videos: Attribute.Media;
     content: Attribute.Text & Attribute.Required;
+    slug: Attribute.UID<'api::topic.topic', 'title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
