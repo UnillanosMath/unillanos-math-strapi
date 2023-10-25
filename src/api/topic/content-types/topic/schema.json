@@ -45,13 +45,23 @@
         "videos"
       ]
     },
-    "content": {
-      "type": "text",
-      "required": true
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "questions_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::questions-category.questions-category"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
     }
   }
 }

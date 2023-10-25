@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions_categories",
+  "info": {
+    "singularName": "questions-category",
+    "pluralName": "questions-categories",
+    "displayName": "QuestionsCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
