@@ -737,7 +737,7 @@ export interface ApiTopicTopic extends Schema.CollectionType {
         'plugin::ckeditor.CKEditor',
         {
           output: 'HTML';
-          preset: 'standard';
+          preset: 'rich';
         }
       >;
     createdAt: Attribute.DateTime;
