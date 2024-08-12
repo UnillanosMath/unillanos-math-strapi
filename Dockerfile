@@ -24,6 +24,8 @@ ENV DATABASE_PASSWORD=$DATABASE_PASSWORD
 # Instalar dependencias
 RUN npm install
 
+RUN npm run build
+
 # Exponer el puerto
 EXPOSE 1337
 
